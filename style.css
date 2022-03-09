@@ -9,4 +9,14 @@
   left: 0;
 }
 
+.item-img
+{
+  background-color: aqua;
+  width: 60%;
+}
 
+.item-lgn
+{
+  background-color: red;
+  width: 40%;
+}
