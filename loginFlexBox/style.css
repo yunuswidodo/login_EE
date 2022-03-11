@@ -48,11 +48,16 @@
   border-radius: 50%;
 }
 
+.box-error {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  font-family: Inter, sans-serif;
+}
 .box-form 
 {
   width: 300px;
-  height: 300px;
-  margin-top: 12px;
+  height: 264px;
   background-color: white;
   border-radius: 8px;
   display: flex;
@@ -61,20 +66,43 @@
 
 .box-form form 
 {
-  padding-top: 30px;
+  padding-top: 40px;
   /* background-color: red;
   width: 250px;
   height: 100px; */
 }
 
-.box-form form label {
+.box-form form label 
+{
   font-size:20px ;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
 }
 
-.box-form form input {
+.box-form form input 
+{
   height: 36px;
   width: 250px;
+  margin-bottom: 16px;
   border-radius: 12px;
   border-color: #0B1C2F ;
+}
+
+.box-form form button 
+{
+  height: 30px;
+  width: 120px;
+  border-radius: 8px;
+  color: white;
+  background-color: #0B1C2F;
+  margin: 0 auto;
+  display: block;
+}
+
+.box-copyright 
+{
+  background-color: red;
+  color: white;
+  /* margin-top: 60px; */
+ 
 }
