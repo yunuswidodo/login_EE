@@ -20,10 +20,8 @@ html,body
   vertical-align:top;
   height:100%;
   width:60%;
-
   background-image: url('images/bg.PNG');
   background-repeat: no-repeat;
-  
   background-size: 100% 100%;
 }
 
@@ -34,24 +32,18 @@ html,body
   background:#0B1C2F;
   height:100%;
   width:40%;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-/* .box-lgn
+.box-lgn
 {
   width: 500px;
   height: 600px;
-  background-color: red;
-  margin-left: auto;
-  margin-right: auto;
-  
-  
+  background-color: saddlebrown;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.box-lgn-title
-{
-  width: 450px;
-  height: 300px;
-  margin-top: 50%;
-  position: absolute;
-  background-color: blue;
-} */
