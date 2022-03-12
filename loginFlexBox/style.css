@@ -78,9 +78,10 @@
 
 .box-form form label 
 {
-  font-size:15px ;
-  font-family: Inter, sans-serif;
+  font-size:12px ;
+  font-family: sans-serif;
   font-weight: bold;
+  color: #0B1C2F;
 }
 
 .box-form form input 
@@ -90,6 +91,12 @@
   margin-bottom: 16px;
   border-radius: 4px;
   border-color: #0B1C2F ;
+  font-family: sans-serif;
+  color: #0B1C2F;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 .box-form form button 
@@ -98,9 +105,16 @@
   width: 100px;
   border-radius: 4px;
   color: white;
-  background-color: #0B1C2F;
+  background-color: #0B1C2F;  
+  font-family: sans-serif;
+  font-size: 15px;
   margin: 0 auto;
   display: block;
+}
+
+.box-form form button:hover
+{
+  background-color: #050c14;  
 }
 
 .box-copyright 
@@ -113,8 +127,15 @@
 
 /* layar hp samsung galaxy Tab A8 1200 x 1920 */
 
-@media screen and (max-width:1200) {
-  .side-img {
+@media screen and (max-width:1200px) {
+  .side-img 
+  {
     display: none;
   }
+  .side-lgn
+  {
+    width: 100%;
+  }
 }
+
+
