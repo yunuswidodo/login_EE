@@ -25,20 +25,22 @@
   height: 100vh;
   background-color: #0B1C2F ;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */ /*responsive */
   flex-direction: column;
   align-content: center; /* center verical */
   justify-content: center; /* center horizontal */
   align-items: center; /*center item */
 }
 
-.box-title p 
+.box-title 
 {
+  margin-top: 20px;
   font-family: Inter, sans-serif;
   font-size: 50px;
   font-weight: bold;
   color: white;
   font-weight: 20px;
+  
 }
 
 .box-logo img
@@ -59,9 +61,11 @@
   width: 300px;
   height: 264px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px;
 }
 
 .box-form form 
@@ -74,7 +78,7 @@
 
 .box-form form label 
 {
-  font-size:20px ;
+  font-size:15px ;
   font-family: Inter, sans-serif;
   font-weight: bold;
 }
@@ -84,15 +88,15 @@
   height: 36px;
   width: 250px;
   margin-bottom: 16px;
-  border-radius: 12px;
+  border-radius: 4px;
   border-color: #0B1C2F ;
 }
 
 .box-form form button 
 {
   height: 30px;
-  width: 120px;
-  border-radius: 8px;
+  width: 100px;
+  border-radius: 4px;
   color: white;
   background-color: #0B1C2F;
   margin: 0 auto;
@@ -101,8 +105,16 @@
 
 .box-copyright 
 {
-  background-color: red;
   color: white;
-  /* margin-top: 60px; */
- 
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+/* layar hp samsung galaxy Tab A8 1200 x 1920 */
+
+@media screen and (max-width:1200) {
+  .side-img {
+    display: none;
+  }
 }
