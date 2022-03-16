@@ -1,3 +1,4 @@
+/* note :   layout ini menganut faham flex */
 * {
   margin: 0px;
   padding: 0px;
@@ -51,12 +52,14 @@
   border-radius: 50%;
 }
 
-.box-error {
+.box-error 
+{
   margin-top: 5px;
   margin-bottom: 5px;
   color: red;
   font-family: Inter, sans-serif;
 }
+
 .box-form 
 {
   width: 300px;
@@ -105,7 +108,7 @@
 }
 
 
-.box-form form button 
+.box-form form .button-go
 {
   height: 30px;
   width: 100px;
@@ -118,7 +121,7 @@
   display: block;
 }
 
-.box-form form button:hover
+.box-form form .button-go:hover
 {
   background-color: #050c14;  
 }
@@ -130,6 +133,61 @@
   font-family: sans-serif;
   font-size: small;
 }
+
+
+.notification
+{
+  visibility: hidden ;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  position: fixed;
+  /* display: flex; */
+  justify-content: center;/*  center horizontal */
+  align-items: center; /*center vertical */
+}
+
+.box-notif
+{
+  
+  background-color: white;
+  height: 150px;
+  width: 350px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*  center horizontal */
+  align-items: center; /*center vertical */
+}
+
+.box-notif-message 
+{
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+  margin-top: 16px;
+  
+}
+
+.box-notif-button 
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 30px;
+}
+.box-notif-button button
+{
+  background-color: #0B1C2F;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border-radius: 4px;
+}
+
+
 
 /* layar hp samsung galaxy Tab A8 1200 x 1920 */
 

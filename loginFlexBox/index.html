@@ -22,18 +22,46 @@
                 <p>persiapan erro </p>
             </div>
             <div class="box-form">
-                <form action="/ya gak tau kok tanya saya ">
+                <form action="#">
                     <label for="userName" class="labelUserName">Username</label><br>
                     <input type="text" id="userName" name="userName" placeholder="enter your username"><br>
                     <label for="password" class="labelPassword">Password</label><br>
-                    <input type="text" id="password" name="password" placeholder="enter your password"><br><br>
-                    <button>go</button>
+                    <input type="text" id="password" name="password" placeholder="enter your password"><br><br> 
+                    <input type="button" class="button-go" value="go" onclick="javascript:buttonGo()">
                   </form> 
             </div>
             <div class="box-copyright">
                 <p>copyright by gdsystem &reg; 2003 - 2023</p>
             </div>
         </div>
-      </div>
+        <div class="notification" id="notification">
+            <div class="box-notif">
+                <div class="box-notif-message">
+                    <p> 
+                        That user is already logged in another location 
+                        do you want to override it ?
+                    </p>
+                </div> 
+                <div class="box-notif-button">
+                    <button type="button" class="btn-overide"> override</button>
+                    <button type="button" class="btn-no" onclick="javascript:closeNotif()"> no</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // default notification 
+         let notification = document.getElementById("notification"); 
+        function buttonGo() 
+        {
+            notification.style.visibility = "visible";
+        }
+
+        function closeNotif()
+        {
+            notification.style.visibility = "hidden";
+        }
+    </script>
 </body>
 </html>
