@@ -16,12 +16,9 @@
 .side-img {
   width: 60%;
   height: 100vh;
-}
-
-.side-img img{
-  height: 100vh;
-  width: 100%;
+  background-image: url('../images/bg.PNG');
   background-repeat: no-repeat;
+  background-size: 100% 100%;  
 }
 
 .side-lgn 
